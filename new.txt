@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-hello word.......
-update 2.....
-=======
-hello
->>>>>>> parent of e818bbe (update 1)
