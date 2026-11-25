@@ -1,0 +1,25 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+
+[[mods]]
+modId = "skilltree"
+version = "1.0.0"
+displayName = "Simple Skill Tree"
+description = '''
+Level up to earn skill points and spend them in a small skill tree (press K).
+'''
+
+[[dependencies.skilltree]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.skilltree]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
