@@ -2,6 +2,7 @@ plugins {
     id 'java-library'
     id 'idea'
     id 'net.neoforged.moddev' version '2.0.78'
+}
 
 version = '1.0.0'
 group = 'com.example.skilltree'
@@ -10,27 +11,16 @@ base { archivesName = 'skilltree' }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
-repositories {
-    mavenLocal()
-}
-
 neoForge {
     version = project.neo_version
 
     runs {
-        client {
-            client()
-        }
-        server {
-            server()
-            programArgument '--nogui'
-        }
+        client { client() }
+        server { server(); programArgument '--nogui' }
     }
 
     mods {
-        skilltree {
-            sourceSet sourceSets.main
-        }
+        skilltree { sourceSet sourceSets.main }
     }
 }
 
